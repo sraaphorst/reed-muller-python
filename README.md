@@ -1,4 +1,4 @@
-# Reed-Muller
+# Reed-Muller in Python
 
 This is a research project I completed for a course at Carleton University, "Finite Fields and Coding Theory."
 
