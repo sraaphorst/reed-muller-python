@@ -14,22 +14,22 @@ if __name__ == '__main__':
         sys.stderr.write('Usage: %s r m word [word [...]]\n' % (sys.argv[0],))
         sys.exit(1)
 
-    r,m = map(int,sys.argv[1:3])
+    r, m = map(int, sys.argv[1:3])
     if (m <= r):
         sys.stderr.write('We require r < m.\n')
         sys.exit(2)
 
     # Create the code.
-    rm = reedmuller.ReedMuller(r,m)
+    rm = reedmuller.ReedMuller(r, m)
     k = rm.message_length()
 
     # Now iterate over the words to encode, validate them, and encode them.
     for word in sys.argv[3:]:
         try:
-            listword = map(int,word)
-            if (not set(listword).issubset([0,1])) or (len(listword) != k):
+            listword = list(map(int, word))
+            if (not set(listword).issubset([0, 1])) or (len(listword) != k):
                 sys.stderr.write('FAIL: word %s is not a 0-1 string of length %d\n' % (word, k))
             else:
-                print ''.join(map(str,rm.encode(listword)))
+                print(''.join(map(str, rm.encode(listword))))
         except:
             sys.stderr.write('FAIL: word %s is not a 0-1 string of length %d\n' % (word, k))
