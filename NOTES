@@ -1,0 +1,5 @@
+To build:
+python3 setup.py bdist_egg sdist
+
+To upload to pypi:
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
