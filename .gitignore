@@ -34,3 +34,6 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+
+.gitignore_files
+.gitignore_files/*
