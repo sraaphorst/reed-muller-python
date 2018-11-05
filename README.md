@@ -1,6 +1,6 @@
 # Reed-Muller in Python
 
-**Status:** Complete.
+**Status:** Complete, verson 1.1.2.
 
 This is a research project I completed for a course at Carleton University, "Finite Fields and Coding Theory."
 
