@@ -1,4 +1,4 @@
-# Reed-Muller in Python
+# Reed-Muller Codes in Python
 
 **Status:** Complete, verson 1.1.2.
 
